@@ -3,7 +3,7 @@ import Header from "@/components/layout/Header"
 
 export default function MainLayout() {
   return (
-    <div className="min-h-screen bg-[#2B2B2B]">
+    <div className="min-h-screen ">
       <Header/>
 
       <main className="p-4">
