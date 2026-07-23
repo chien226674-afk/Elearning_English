@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import api from "@/lib/axios";
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
 import { Area, AreaChart, Bar, BarChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import { Users, BookOpen, Clock, Trophy, Loader2 } from "lucide-react";
@@ -39,12 +39,6 @@ export default function AdminDashboard() {
     );
   }
 
-  const chartConfig = {
-    value: {
-      label: "Số lượng",
-      color: "hsl(var(--chart-1))",
-    },
-  };
 
   return (
     <div className="space-y-6">
